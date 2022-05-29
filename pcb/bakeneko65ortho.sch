@@ -58,7 +58,7 @@ F 1 "10k" V 13345 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 13450 5650 50  0001 C CNN
 F 3 "~" H 13450 5650 50  0001 C CNN
 	1    13450 5650
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -2279,7 +2279,7 @@ Text GLabel 13350 5350 2    50   Input ~ 0
 COL12
 Text GLabel 13350 5050 2    50   Input ~ 0
 COL13
-Text GLabel 13350 4250 2    50   Input ~ 0
+Text GLabel 13350 3650 2    50   Input ~ 0
 ROW1
 Text GLabel 13350 3550 2    50   Input ~ 0
 ROW0
@@ -2644,59 +2644,6 @@ Wire Wire Line
 Wire Wire Line
 	13150 4950 13350 4950
 $Comp
-L Connector:AVR-ISP-6 J2
-U 1 1 629205EC
-P 2900 3300
-F 0 "J2" H 2621 3396 50  0000 R CNN
-F 1 "AVR-ISP-6" H 2621 3305 50  0000 R CNN
-F 2 "bakeneko:ISP" V 2650 3350 50  0001 C CNN
-F 3 " ~" H 1625 2750 50  0001 C CNN
-	1    2900 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0111
-U 1 1 62922AAE
-P 3050 2800
-F 0 "#PWR0111" H 3050 2650 50  0001 C CNN
-F 1 "+5V" H 3065 2973 50  0000 C CNN
-F 2 "" H 3050 2800 50  0001 C CNN
-F 3 "" H 3050 2800 50  0001 C CNN
-	1    3050 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2800 3050 2800
-$Comp
-L power:GND #PWR0112
-U 1 1 6295962C
-P 3050 3700
-F 0 "#PWR0112" H 3050 3450 50  0001 C CNN
-F 1 "GND" H 3055 3527 50  0000 C CNN
-F 2 "" H 3050 3700 50  0001 C CNN
-F 3 "" H 3050 3700 50  0001 C CNN
-	1    3050 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 3700 3050 3700
-Text GLabel 3500 3100 2    50   Input ~ 0
-MISO
-Text GLabel 3500 3200 2    50   Input ~ 0
-MOSI
-Text GLabel 3500 3300 2    50   Input ~ 0
-SCK
-Text GLabel 3500 3400 2    50   Input ~ 0
-RESET
-Wire Wire Line
-	3300 3100 3500 3100
-Wire Wire Line
-	3300 3200 3500 3200
-Wire Wire Line
-	3300 3300 3500 3300
-Wire Wire Line
-	3300 3400 3500 3400
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 62A07601
 P 9550 3050
@@ -2930,20 +2877,8 @@ Wire Wire Line
 Wire Wire Line
 	11700 4350 11950 4350
 NoConn ~ 11950 4150
-Text GLabel 13350 3650 2    50   Input ~ 0
-SCK
 Wire Wire Line
 	13350 3650 13150 3650
-Text GLabel 13350 3750 2    50   Input ~ 0
-MOSI
-Wire Wire Line
-	13350 3750 13150 3750
-Text GLabel 13350 3850 2    50   Input ~ 0
-MISO
-Wire Wire Line
-	13350 3850 13150 3850
-Wire Wire Line
-	13350 4250 13150 4250
 Wire Wire Line
 	13750 5750 13750 5650
 Wire Wire Line
